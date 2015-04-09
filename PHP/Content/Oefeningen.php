@@ -1,7 +1,7 @@
 <?php
 	echo '<style> .content { text-align: center; } </style>';
 	if(isset($_COOKIE['Name']))
-		{
+	{
 		echo '<h1>Oefeningen</h1>
 			<p>
 				Welkom bij de oefeningen, hieronder kun je kiezen welke soort sommen je wilt oefenen. <br />
@@ -21,4 +21,4 @@
 					<input class="button" type="submit" value="Start oefeningen" />
 				</form>
 			</p>';
-		} ?>
+	} ?>

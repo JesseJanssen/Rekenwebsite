@@ -1,6 +1,6 @@
 <?php
 	if(isset($_COOKIE['Name']))
-		{
+	{
 		echo '<h1>Welkom</h1>
 			<p>
 				Welkom op de rekenwebsite van basisschool De Splinter.
@@ -10,9 +10,9 @@
 				Deze site is alleen bedoeld voor kinderen van de basisschool, zonder inloggegevens kun je niets op deze site.
 			</p>
 			<img src="../IMG/Welkom.png" />';
-		}
+	}
 	else
-		{
+	{
 		echo '<h1>Welkom</h1>
 			<p>
 				Welkom op de rekenwebsite van basisschool De Splinter.
@@ -20,4 +20,4 @@
 				Om te kunnen oefenen en om een toets te maken, moet je eerst inloggen met je naam en wachtwoord.
 			</p>
 			<img src="../IMG/Welkom.png" />';
-			} ?>
+	} ?>

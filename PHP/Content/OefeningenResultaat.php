@@ -1,6 +1,6 @@
 <?php
 	if(isset($_COOKIE['Name']))
-		{
+	{
 		echo '<style> .content { text-align: center; } </style>';
 		$_SESSION['Mistakes'] = 0;
 		for($i = 0; $i < $Vragen; $i++) if(isset($_SESSION['Antwoord'][$i]) && !empty($_SESSION['Antwoord'][$i]) && $_SESSION['Antwoord'][$i] != $_SESSION['Answer'][$i]) $_SESSION['Mistakes'] += 1;
@@ -27,7 +27,7 @@
 			<th>Gegeven</th>
 		</tr>';
 		for($i = 0; $i < ($Vragen / 2); $i++)
-			{
+		{
 			if(!isset($_SESSION['Antwoord'][$i]))	echo '	<tr>
 																<td class="wrong">'.($i + 1).'</td>
 																<td class="wrong">'.$_SESSION['FirstNumber'][$i].' '.$_SESSION['Sort'][$i].' '.$_SESSION['SecondNumber'][$i].'</td>
@@ -66,6 +66,6 @@
 							<td class="wrong">'.$_SESSION['Answer'][($i + 10)].'</td>
 							<td class="wrong">'.$_SESSION['Antwoord'][($i + 10)].'</td>
 						</tr>';
-			}
+		}
 		echo '</table>';
-		} ?>
+	} ?>
